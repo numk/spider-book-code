@@ -1,0 +1,15 @@
+GET https://api.example.com/v2/goods/list
+Host: api.example.com
+User-Agent: ExampleApp/2.1.0 (Android 13)
+X-App-Token: eyJhbGciOiJIUzI1NiJ9...  ← 每次不同
+X-Timestamp: 1704067200
+X-Sign: 9a8b7c6d5e4f...                ← 每次不同
+
+Response:
+{
+  "code": 0,
+  "data": {
+    "list": [...],
+    "total": 1200
+  }
+}

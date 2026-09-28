@@ -1,0 +1,9 @@
+Python 脚本 (PC)
+    ↓ 调用 frida script
+Frida JavaScript 脚本 (注入到 APP 进程中)
+    ↓ 调用
+目标 APP 的 Java/Native 函数
+    ↓ 返回结果
+Frida JavaScript 脚本
+    ↓ 通过 rpc.exports 返回给 Python
+Python 脚本接收结果

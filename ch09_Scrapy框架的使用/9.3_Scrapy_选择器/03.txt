@@ -1,0 +1,9 @@
+# 在 Scrapy Shell 中测试
+>>> response.css('.product_pod img::attr(alt)').getall()[:3]
+['A Light in the Attic', 'Tipping the Velvet', 'Soumission']
+
+>>> response.css('.price_color::text').getall()[:3]
+['£51.77', '£53.74', '£50.10']
+
+>>> response.css('.next a::attr(href)').get()
+'catalogue/page-2.html'

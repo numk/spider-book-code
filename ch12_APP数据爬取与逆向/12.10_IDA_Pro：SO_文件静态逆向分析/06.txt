@@ -1,0 +1,1 @@
+Search → Sequence of bytes → 输入: 01 23 45 67

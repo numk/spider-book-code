@@ -1,0 +1,30 @@
+# 对应：第13章 AI 时代爬虫的发展趋势与展望
+# 小节：13.4 云原生爬虫架构的演进
+# 条目：13.4.3 容器化爬虫：Docker + Kubernetes
+# 清单：03
+# 说明：摘自书稿示例，未改写。
+
+# kubernetes/spider-job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: spider-batch-job
+spec:
+  completions: 100       # 总任务数：100
+  parallelism: 20        # 同时运行 20 个 Pod
+  template:
+    spec:
+      containers:
+      - name: spider
+        image: my-registry/spider:latest
+        env:
+        - name: REDIS_URL
+          value: "redis://redis-service:6379"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "0.5"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
+      restartPolicy: OnFailure

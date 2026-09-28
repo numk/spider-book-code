@@ -1,0 +1,14 @@
+2026-04-05 10:00:01 [scrapy.core.engine] INFO: Spider opened
+2026-04-05 10:00:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-04-05 10:00:02 [books_full] INFO: 正在解析列表页：https://books.toscrape.com/
+2026-04-05 10:00:03 [books_full] DEBUG: 解析完成：《A Light in the Attic》 £51.77
+2026-04-05 10:00:03 [books_full] DEBUG: 解析完成：《Tipping the Velvet》 £53.74
+...
+2026-04-05 10:01:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-04-05 10:01:45 [book_spider.pipelines] INFO: 共写入 MySQL 1000 条记录
+2026-04-05 10:01:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+  {'downloader/request_count': 1050,
+   'downloader/response_count': 1050,
+   'item_scraped_count': 1000,
+   'finish_reason': 'finished',
+   ...}

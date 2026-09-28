@@ -1,0 +1,10 @@
+已将 5 个 URL 加入队列
+队列中共有 5 个待爬取 URL
+
+开始消费队列：
+正在爬取：https://example.com/page/1  （剩余：4 个）
+正在爬取：https://example.com/page/2  （剩余：3 个）
+正在爬取：https://example.com/page/3  （剩余：2 个）
+正在爬取：https://example.com/page/4  （剩余：1 个）
+正在爬取：https://example.com/page/5  （剩余：0 个）
+队列已空，爬取完成！

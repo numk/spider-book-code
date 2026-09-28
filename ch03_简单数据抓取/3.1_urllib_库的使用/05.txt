@@ -1,0 +1,4 @@
+ParseResult(scheme='http', netloc='example.com', path='/search', params='', query='q=python&page=1', fragment='')
+Host: example.com
+Path: /search
+Query: q=python&page=1

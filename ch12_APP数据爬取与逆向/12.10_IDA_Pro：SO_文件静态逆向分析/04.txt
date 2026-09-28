@@ -1,0 +1,9 @@
+; Java_com_example_app_NativeUtils_sign
+SUB    SP, SP, #0x60
+STP    X29, X30, [SP,#0x50]
+ADD    X29, SP, #0x50
+MOV    X19, X0          ; JNIEnv*
+MOV    X20, X2          ; jstring content
+MOV    X21, X3          ; jstring appKey
+BL     _GetStringUTFChars
+; ... 数百行汇编 ...

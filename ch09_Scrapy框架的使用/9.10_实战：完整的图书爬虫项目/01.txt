@@ -1,0 +1,9 @@
+book_spider/
+├── scrapy.cfg
+└── book_spider/
+    ├── items.py
+    ├── middlewares.py
+    ├── pipelines.py
+    ├── settings.py
+    └── spiders/
+        └── books_full.py

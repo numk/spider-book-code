@@ -1,0 +1,8 @@
+# 搜索加密相关方法
+关键词：sign / encrypt / hmac / md5 / token / nonce / appkey
+
+# 搜索接口路径（从抓包结果中取）
+关键词：/api/v2/feed / user/info / search
+
+# 搜索硬编码的密钥
+关键词：secret / key / salt / appSecret

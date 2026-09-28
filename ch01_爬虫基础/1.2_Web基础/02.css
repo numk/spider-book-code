@@ -1,0 +1,27 @@
+// 对应：第1章 爬虫基础
+// 小节：1.2 Web基础
+// 条目：1.2.1 网页的基本组成
+// 清单：02
+// 说明：摘自书稿示例，未改写。
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #333333;
+    font-size: 24px;
+}
+p {
+    color: #666666;
+    font-size: 16px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#link {
+    color: #007bff;
+    text-decoration: none;
+}

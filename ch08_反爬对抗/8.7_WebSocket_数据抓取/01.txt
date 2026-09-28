@@ -1,0 +1,6 @@
+Request URL: wss://stream.example.com/ws/market
+Connection: Upgrade
+Upgrade: websocket
+Origin: https://www.example.com
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Sec-WebSocket-Version: 13

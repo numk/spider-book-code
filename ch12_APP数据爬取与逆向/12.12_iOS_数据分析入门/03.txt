@@ -1,0 +1,11 @@
+#import <Foundation/Foundation.h>
+
+@interface LessonGreeter : NSObject
+- (NSString *)greeting:(NSString *)name;
+@end
+
+@implementation LessonGreeter
+- (NSString *)greeting:(NSString *)name {
+    return [NSString stringWithFormat:@"Hello, %@", name];
+}
+@end

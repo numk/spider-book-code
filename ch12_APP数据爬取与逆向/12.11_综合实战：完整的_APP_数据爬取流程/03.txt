@@ -1,0 +1,5 @@
+public static String computeSign(Map<String, String> params, long timestamp) {
+    String sortedQuery = buildSortedQuery(params);
+    String rawStr = sortedQuery + "&ts=" + timestamp + "&nonce=" + generateNonce();
+    return HmacSHA256(rawStr, SECRET_KEY);
+}

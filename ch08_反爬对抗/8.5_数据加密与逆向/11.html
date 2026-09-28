@@ -1,0 +1,23 @@
+<!--
+对应：第8章 反爬对抗
+小节：8.5 数据加密与逆向
+条目：8.5.3 JavaScript 逆向教学实战
+清单：11
+说明：摘自书稿示例，未改写。
+-->
+
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>签名教学</title>
+<label>关键词 <input id="keyword" value="Python爬虫"></label>
+<button id="search">搜索</button><pre id="result"></pre>
+<script type="module">
+import {sign} from './sign.mjs';
+document.querySelector('#search').onclick = async () => {
+  const keyword = document.querySelector('#keyword').value;
+  const page = 1, timestamp = Math.floor(Date.now() / 1000);
+  const signature = await sign(keyword, page, timestamp);
+  const query = new URLSearchParams({keyword, page, timestamp, sign: signature});
+  const response = await fetch('/api/search?' + query);
+  document.querySelector('#result').textContent = await response.text();
+};
+</script></html>

@@ -1,0 +1,7 @@
+[爬取] 正在爬取：https://example.com/book/1
+[爬取] 正在爬取：https://example.com/book/2
+[跳过] 已爬取：https://example.com/book/1
+[爬取] 正在爬取：https://example.com/book/3
+[跳过] 已爬取：https://example.com/book/2
+
+共爬取了 3 个不重复的 URL

@@ -1,0 +1,22 @@
+基础层（必须）
+├── Python 熟练：异步编程、类型注解、性能优化
+├── HTTP 协议深入：TLS、HTTP/2、WebSocket
+├── 数据处理：pandas、数据清洗、正则表达式
+└── Linux 运维：Docker、基础命令
+
+工具层（必须）
+├── 请求：requests / httpx / aiohttp
+├── 解析：BeautifulSoup / lxml / playwright
+├── 框架：Scrapy + scrapy-redis
+└── 存储：MySQL / MongoDB / Redis
+
+进阶层（差异化竞争力）
+├── APP 逆向：浏览器开发者工具 + Frida + unidbg 完整链路
+├── AI 集成：LLM 解析、Agent 爬虫、MCP 工具开发
+├── 云原生：K8s 部署、Serverless 函数
+└── 反逆向：WASM 分析、TLS 指纹、QUIC 协议
+
+认知层（持续学习）
+├── 关注安全社区（PwnTheWorld、先知社区）
+├── 跟进 AI 进展（LLM + 工具调用的最新实践）
+└── 了解法律动态（数据合规、隐私保护）

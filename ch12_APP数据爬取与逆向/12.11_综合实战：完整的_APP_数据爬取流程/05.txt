@@ -1,0 +1,2 @@
+[HmacSHA256] data: category=1&page=1&size=20&ts=1704067200&nonce=8f3a2b1c
+[HmacSHA256] key: ExAmPleS3cr3tK3y2024

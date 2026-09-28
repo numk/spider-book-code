@@ -1,0 +1,23 @@
+jstring Java_com_example_app_NativeUtils_sign(JNIEnv *env, jclass clazz, jstring content, jstring appKey)
+{
+    const char *content_str = (*env)->GetStringUTFChars(env, content, 0);
+    const char *key_str = (*env)->GetStringUTFChars(env, appKey, 0);
+    
+    // HMAC-SHA256 计算
+    unsigned char result[32];
+    HMAC(EVP_sha256(), key_str, strlen(key_str),
+         (unsigned char *)content_str, strlen(content_str),
+         result, NULL);
+    
+    // 转为十六进制字符串
+    char hex_result[65];
+    for (int i = 0; i < 32; i++) {
+        sprintf(hex_result + i * 2, "%02x", result[i]);
+    }
+    hex_result[64] = '\0';
+    
+    (*env)->ReleaseStringUTFChars(env, content, content_str);
+    (*env)->ReleaseStringUTFChars(env, appKey, key_str);
+    
+    return (*env)->NewStringUTF(env, hex_result);
+}

@@ -1,0 +1,7 @@
+lib/
+├── arm64-v8a/        ← 64 位 ARM（主流）
+│   └── libnative.so
+├── armeabi-v7a/      ← 32 位 ARM（兼容旧设备）
+│   └── libnative.so
+└── x86_64/           ← x86（模拟器）
+    └── libnative.so
